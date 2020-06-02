@@ -11,7 +11,10 @@ test_data_path = os.path.join(project_path, 'test_data', 'test.xlsx')     # D:\A
 # 测试报告路径
 test_report_path = os.path.join(project_path, 'test_result', 'html_report', 'test_report.html')
 
-print(test_data_path)
+# 测试模块路径
+test_config_path = os.path.join(project_path, 'conf', 'case.ini')
+
+print(test_config_path)
 
 
 
