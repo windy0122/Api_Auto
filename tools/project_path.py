@@ -14,7 +14,7 @@ test_report_path = os.path.join(project_path, 'test_result', 'html_report', 'tes
 # 测试模块路径
 test_config_path = os.path.join(project_path, 'conf', 'case.ini')
 
-print(test_config_path)
+# print(test_config_path)
 
 
 

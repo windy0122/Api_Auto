@@ -314,9 +314,9 @@ function hide_img(obj){
 <div class='heading'>
 <h1 style="font-family: Microsoft YaHei">单元测试</h1>
 <p class='attribute'><strong>测试人员 : </strong> 吴迪</p>
-<p class='attribute'><strong>开始时间 : </strong> 2020-06-02 21:31:59</p>
-<p class='attribute'><strong>合计耗时 : </strong> 0:00:01.113704</p>
-<p class='attribute'><strong>测试结果 : </strong> 共 6，通过 1，失败 5，通过率= 16.67%</p>
+<p class='attribute'><strong>开始时间 : </strong> 2020-06-05 17:13:02</p>
+<p class='attribute'><strong>合计耗时 : </strong> 0:00:02.432289</p>
+<p class='attribute'><strong>测试结果 : </strong> 共 9，通过 2，失败 7，通过率= 22.22%</p>
 
 <p class='description'>测试报告</p>
 </div>
@@ -324,10 +324,10 @@ function hide_img(obj){
 
 
 <p id='show_detail_line'>
-<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 16.67% }</a>
-<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 5 }</a>
-<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 1 }</a>
-<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 6 }</a>
+<a class="btn btn-primary" href='javascript:showCase(0)'>概要{ 22.22% }</a>
+<a class="btn btn-danger" href='javascript:showCase(1)'>失败{ 7 }</a>
+<a class="btn btn-success" href='javascript:showCase(2)'>通过{ 2 }</a>
+<a class="btn btn-info" href='javascript:showCase(3)'>所有{ 9 }</a>
 </p>
 <table id='result_table' class="table table-condensed table-bordered table-hover">
 <colgroup>
@@ -351,11 +351,11 @@ function hide_img(obj){
 
 <tr class='failClass warning'>
     <td>tools.http_request_ddt.TestHttpRequest</td>
-    <td class="text-center">6</td>
-    <td class="text-center">1</td>
-    <td class="text-center">5</td>
+    <td class="text-center">9</td>
+    <td class="text-center">2</td>
+    <td class="text-center">7</td>
     <td class="text-center">0</td>
-    <td class="text-center"><a href="javascript:showClassDetail('c1',6)" class="detail" id='c1'>详细</a></td>
+    <td class="text-center"><a href="javascript:showClassDetail('c1',9)" class="detail" id='c1'>详细</a></td>
         <td>&nbsp;</td>
 </tr>
 
@@ -381,13 +381,13 @@ ft1_2: 执行出错：'0' != '1'
 - 0
 + 1
 
-获取的结果是：{'msg': '手机号不能为空', 'requestUUID': 'JY-b2e0d062f1666b0e07fb28a8d0bec702', 'responseTime': '2020-06-02 21:31:59', 'ret': 'ERROR_CODE_10002', 'success': '1', 'val': {}}
+获取的结果是：手机号不能为空
 Traceback (most recent call last):
-  File "D:\Python36\lib\site-packages\ddt.py", line 145, in wrapper
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\site-packages\ddt.py", line 182, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\Api_Auto\tools\http_request_ddt.py", line 30, in test_api
+  File "E:\Api_Auto\tools\http_request_ddt.py", line 29, in test_api
     raise e
-  File "D:\Api_Auto\tools\http_request_ddt.py", line 25, in test_api
+  File "E:\Api_Auto\tools\http_request_ddt.py", line 24, in test_api
     self.assertEqual('0', res.json()['success'])
 AssertionError: '0' != '1'
 - 0
@@ -417,13 +417,13 @@ ft1_3: 执行出错：'0' != '1'
 - 0
 + 1
 
-获取的结果是：{'msg': '登录密码错误', 'requestUUID': 'JY-bb209b0aea02f57ec781f0f0c0fc0dd0', 'responseTime': '2020-06-02 21:31:59', 'ret': 'ERROR_CODE_10002', 'success': '1', 'val': {}}
+获取的结果是：登录密码错误
 Traceback (most recent call last):
-  File "D:\Python36\lib\site-packages\ddt.py", line 145, in wrapper
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\site-packages\ddt.py", line 182, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\Api_Auto\tools\http_request_ddt.py", line 30, in test_api
+  File "E:\Api_Auto\tools\http_request_ddt.py", line 29, in test_api
     raise e
-  File "D:\Api_Auto\tools\http_request_ddt.py", line 25, in test_api
+  File "E:\Api_Auto\tools\http_request_ddt.py", line 24, in test_api
     self.assertEqual('0', res.json()['success'])
 AssertionError: '0' != '1'
 - 0
@@ -453,13 +453,13 @@ ft1_4: 执行出错：'0' != '1'
 - 0
 + 1
 
-获取的结果是：{'msg': '手机号不能为空', 'requestUUID': 'JY-fe508871545158b738232966f62ca5f9', 'responseTime': '2020-06-02 21:31:59', 'ret': 'ERROR_CODE_10002', 'success': '1', 'val': {}}
+获取的结果是：手机号不能为空
 Traceback (most recent call last):
-  File "D:\Python36\lib\site-packages\ddt.py", line 145, in wrapper
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\site-packages\ddt.py", line 182, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\Api_Auto\tools\http_request_ddt.py", line 30, in test_api
+  File "E:\Api_Auto\tools\http_request_ddt.py", line 29, in test_api
     raise e
-  File "D:\Api_Auto\tools\http_request_ddt.py", line 25, in test_api
+  File "E:\Api_Auto\tools\http_request_ddt.py", line 24, in test_api
     self.assertEqual('0', res.json()['success'])
 AssertionError: '0' != '1'
 - 0
@@ -489,13 +489,13 @@ ft1_5: 执行出错：'0' != '1'
 - 0
 + 1
 
-获取的结果是：{'msg': '错误的手机号，请确认手机号信息', 'requestUUID': 'JY-d9ac07e2e9dfb600aec1dcc12af357d5', 'responseTime': '2020-06-02 21:31:59', 'ret': 'ERROR_CODE_10002', 'success': '1', 'val': {}}
+获取的结果是：错误的手机号，请确认手机号信息
 Traceback (most recent call last):
-  File "D:\Python36\lib\site-packages\ddt.py", line 145, in wrapper
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\site-packages\ddt.py", line 182, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\Api_Auto\tools\http_request_ddt.py", line 30, in test_api
+  File "E:\Api_Auto\tools\http_request_ddt.py", line 29, in test_api
     raise e
-  File "D:\Api_Auto\tools\http_request_ddt.py", line 25, in test_api
+  File "E:\Api_Auto\tools\http_request_ddt.py", line 24, in test_api
     self.assertEqual('0', res.json()['success'])
 AssertionError: '0' != '1'
 - 0
@@ -525,13 +525,91 @@ ft1_6: 执行出错：'0' != '1'
 - 0
 + 1
 
-获取的结果是：{'msg': '登录密码错误', 'requestUUID': 'JY-c552a11822e327bb03eb9b878c8f16a7', 'responseTime': '2020-06-02 21:31:59', 'ret': 'ERROR_CODE_10002', 'success': '1', 'val': {}}
+获取的结果是：登录密码错误
 Traceback (most recent call last):
-  File "D:\Python36\lib\site-packages\ddt.py", line 145, in wrapper
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\site-packages\ddt.py", line 182, in wrapper
     return func(self, *args, **kwargs)
-  File "D:\Api_Auto\tools\http_request_ddt.py", line 30, in test_api
+  File "E:\Api_Auto\tools\http_request_ddt.py", line 29, in test_api
     raise e
-  File "D:\Api_Auto\tools\http_request_ddt.py", line 25, in test_api
+  File "E:\Api_Auto\tools\http_request_ddt.py", line 24, in test_api
+    self.assertEqual('0', res.json()['success'])
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+
+    </pre>
+    </div>
+    </td>
+    <td>无截图</td>
+</tr>
+
+<tr id='pt1_7' class='hiddenRow'>
+    <td class='passCase'><div class='testcase'>test_api_7</div></td>
+    <td colspan='5' align='center'><span class="label label-success success">通过</span></td>
+    <td>无截图</td>
+</tr>
+
+<tr id='ft1_8' class='none'>
+    <td class='failCase'><div class='testcase'>test_api_8</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou  -->
+    <button id='btn_ft1_8' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_8'>失败</button>
+    <div id='div_ft1_8' class="collapse">
+
+    <!-- 默认展开错误信息 -Findyou
+    <button id='btn_ft1_8' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_8'>失败</button>
+    <div id='div_ft1_8' class="collapse in"> -->
+    <pre>
+    
+ft1_8: 执行出错：'0' != '1'
+- 0
++ 1
+
+获取的结果是：登录密码错误
+Traceback (most recent call last):
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\Api_Auto\tools\http_request_ddt.py", line 29, in test_api
+    raise e
+  File "E:\Api_Auto\tools\http_request_ddt.py", line 24, in test_api
+    self.assertEqual('0', res.json()['success'])
+AssertionError: '0' != '1'
+- 0
++ 1
+
+
+
+    </pre>
+    </div>
+    </td>
+    <td>无截图</td>
+</tr>
+
+<tr id='ft1_9' class='none'>
+    <td class='failCase'><div class='testcase'>test_api_9</div></td>
+    <td colspan='5' align='center'>
+    <!--默认收起错误信息 -Findyou  -->
+    <button id='btn_ft1_9' type="button"  class="btn btn-danger btn-xs collapsed" data-toggle="collapse" data-target='#div_ft1_9'>失败</button>
+    <div id='div_ft1_9' class="collapse">
+
+    <!-- 默认展开错误信息 -Findyou
+    <button id='btn_ft1_9' type="button"  class="btn btn-danger btn-xs" data-toggle="collapse" data-target='#div_ft1_9'>失败</button>
+    <div id='div_ft1_9' class="collapse in"> -->
+    <pre>
+    
+ft1_9: 执行出错：'0' != '1'
+- 0
++ 1
+
+获取的结果是：错误的手机号，请确认手机号信息
+Traceback (most recent call last):
+  File "C:\Users\wudi\AppData\Local\Programs\Python\Python38\lib\site-packages\ddt.py", line 182, in wrapper
+    return func(self, *args, **kwargs)
+  File "E:\Api_Auto\tools\http_request_ddt.py", line 29, in test_api
+    raise e
+  File "E:\Api_Auto\tools\http_request_ddt.py", line 24, in test_api
     self.assertEqual('0', res.json()['success'])
 AssertionError: '0' != '1'
 - 0
@@ -547,18 +625,18 @@ AssertionError: '0' != '1'
 
 <tr id='total_row' class="text-center active">
     <td>总计</td>
-    <td>6</td>
-    <td>1</td>
-    <td>5</td>
+    <td>9</td>
+    <td>2</td>
+    <td>7</td>
     <td>0</td>
     <td>&nbsp;</td>
-    <td>通过率：16.67%</td>
+    <td>通过率：22.22%</td>
 </tr>
 </table>
 
 <script>
     showCase(1);
-    drawCircle(1, 5, 0);
+    drawCircle(2, 7, 0);
 </script>
 
 <div id='ending'>&nbsp;</div>

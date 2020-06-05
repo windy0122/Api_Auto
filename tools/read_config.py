@@ -11,7 +11,7 @@ class ReadConfig(object):
         return cf[section][option]
 
 
-config_info = ReadConfig()
-config_info.get_config(tool_path.test_config_path, 'MODE', 'mode')
-print(config_info.get_config(tool_path.test_config_path, 'MODE', 'mode'))
+# config_info = ReadConfig()
+# config_info.get_config(tool_path.test_config_path, 'MODE', 'mode')
+# print(config_info.get_config(tool_path.test_config_path, 'MODE', 'mode'))
 
