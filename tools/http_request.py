@@ -1,4 +1,6 @@
 import requests
+from test_result.log.api_logging import MyLog
+my_logger = MyLog()
 
 
 class HttpRequest(object):
@@ -12,7 +14,7 @@ class HttpRequest(object):
             else:
                 print('输入的请求方法不正确')
         except Exception as e:
-            print('请求报错了：{}'.format(e))
+            my_logger.error('请求报错了：{}'.format(e))
             raise e
         return res
 

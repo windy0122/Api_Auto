@@ -1,6 +1,7 @@
 from openpyxl import load_workbook
 from tools.read_config import ReadConfig
 from tools.project_path import *
+from tools.get_data import GetData
 
 
 class DoExcel(object):
@@ -16,6 +17,19 @@ class DoExcel(object):
                     row_data = dict()
                     row_data['case_id'] = sheet.cell(i, 1).value
                     row_data['url'] = sheet.cell(i, 2).value
+                    # if sheet.cell(i, 3).value.find('${tel}') != -1:
+                    #     row_data['data'] = sheet.cell(i, 3).value.replace('${tel}', str(tel))
+                    #     tel = tel + 1
+                    # elif sheet.cell(i, 3).value.find('${admin_tel}') != -1:
+                    #     row_data['data'] = sheet.cell(i, 3).value.replace('${admin_tel}', str(getattr(GetData, 'admin_tel')))
+                    # elif sheet.cell(i, 3).value.find('${loan_member_id}') != -1:
+                    #     row_data['data'] = sheet.cell(i, 3).value.replace('${loan_member_id}', str(getattr(GetData, 'loan_member_id')))
+                    # elif sheet.cell(i, 3).value.find('${normal_tel}') != -1:
+                    #     row_data['data'] = sheet.cell(i, 3).value.replace('${normal_tel}', str(getattr(GetData, 'normal_tel')))
+                    # elif sheet.cell(i, 3).value.find('${memberID}') != -1:
+                    #     row_data['data'] = sheet.cell(i, 3).value.replace('${memberID}', str(getattr(GetData, 'memberID')))
+                    # else:
+                    #     row_data['data'] = sheet.cell(i, 3).value
                     row_data['data'] = sheet.cell(i, 3).value
                     row_data['title'] = sheet.cell(i, 4).value
                     row_data['http_method'] = sheet.cell(i, 5).value

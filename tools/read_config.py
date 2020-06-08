@@ -1,5 +1,5 @@
 import configparser
-import tools.project_path as tool_path
+from tools.project_path import *
 
 
 class ReadConfig(object):
@@ -11,7 +11,9 @@ class ReadConfig(object):
         return cf[section][option]
 
 
-# config_info = ReadConfig()
-# config_info.get_config(tool_path.test_config_path, 'MODE', 'mode')
-# print(config_info.get_config(tool_path.test_config_path, 'MODE', 'mode'))
+if __name__ == '__main__':
+    config_info = ReadConfig()
+    print(config_info.get_config(test_config_path, 'DB', 'db_config'))
+    # config_info.get_config(test_config_path, 'MODE', 'mode')
+    # print(config_info.get_config(test_config_path, 'MODE', 'mode'))
 
