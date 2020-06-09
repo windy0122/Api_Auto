@@ -5,6 +5,7 @@ from tools.http_request_ddt import TestHttpRequest
 import unittest
 import tools.project_path as tool_path
 import HTMLTestRunner_cn
+from tools.do_email import DoEmail
 
 
 # def run(test_data):
@@ -27,3 +28,6 @@ suite.addTest(loder.loadTestsFromTestCase(TestHttpRequest))
 with open(tool_path.test_report_path, 'wb') as file:
     runner = HTMLTestRunner_cn.HTMLTestRunner(stream=file, title='单元测试', description='测试报告', tester='吴迪')
     runner.run(suite)
+
+DoEmail().send_email()
+
